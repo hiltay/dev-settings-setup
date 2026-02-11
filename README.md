@@ -53,12 +53,12 @@ source ~/.bashrc  # bash
 
 ```
 dev-settings/
-├── README.md              # 本文件
 ├── setup.sh               # 一键安装脚本（核心）
 ├── starship.toml          # Starship 提示符配置
 ├── secrets.sh.example     # API Key 模板
 ├── secrets.sh             # 实际 API Key（已 gitignore）
-└── .gitignore
+├── .gitignore
+└── README.md              # 本文件
 ```
 
 ## setup.sh 做了什么

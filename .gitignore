@@ -1,2 +1,5 @@
 # 敏感信息文件 - 不要提交到版本控制
 secrets.sh
+
+# Cursor Skills - 本地使用，不提交
+.cursor/skills/
