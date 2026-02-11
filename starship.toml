@@ -1,0 +1,78 @@
+# =============================================================================
+# Starship 提示符配置
+# 文档: https://starship.rs/zh-CN/config/
+# =============================================================================
+
+"$schema" = 'https://starship.rs/config-schema.json'
+
+# 提示符之间插入空行
+add_newline = true
+
+# 自定义提示符格式
+format = """
+$username\
+$hostname\
+$directory\
+$git_branch\
+$git_status\
+$python\
+$nodejs\
+$rust\
+$golang\
+$docker_context\
+$cmd_duration\
+$line_break\
+$character"""
+
+# 提示符符号
+[character]
+success_symbol = '[❯](bold green)'
+error_symbol = '[✗](bold red)'
+
+# 目录显示
+[directory]
+truncation_length = 5
+truncation_symbol = '…/'
+style = 'bold cyan'
+
+# Git 分支
+[git_branch]
+symbol = ' '
+style = 'bold purple'
+
+# Git 状态
+[git_status]
+style = 'bold red'
+format = '([$all_status$ahead_behind]($style) )'
+
+# Python
+[python]
+symbol = ' '
+style = 'bold yellow'
+format = '[${symbol}${pyenv_prefix}(${version} )(\($virtualenv\) )]($style)'
+
+# Node.js
+[nodejs]
+symbol = ' '
+style = 'bold green'
+
+# Rust
+[rust]
+symbol = ' '
+style = 'bold orange'
+
+# Go
+[golang]
+symbol = ' '
+style = 'bold cyan'
+
+# Docker
+[docker_context]
+symbol = ' '
+style = 'bold blue'
+
+# 命令执行时间（超过 3 秒才显示）
+[cmd_duration]
+min_time = 3_000
+style = 'bold yellow'
+format = '[ $duration]($style) '
