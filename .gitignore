@@ -3,3 +3,19 @@ secrets.sh
 
 # Cursor Skills - 本地使用，不提交
 .cursor/skills/
+# pixi environments
+.pixi/*
+!.pixi/config.toml
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pyw
+*.pyz
+*.pywz
+*.pyzw
+*.pyzwz
+*.pyzwzw
+*.pyzwzwzw
+*.pyzwzwzwzw
+*.pyzwzwzwzwzw
